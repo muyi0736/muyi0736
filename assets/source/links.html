@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:transparent}
+  body{width:308px;height:194px;overflow:hidden;font-family:"Ink Free","Segoe Print","Comic Sans MS",cursive;color:#2b2a25}
+  .link{
+    position:absolute;left:4px;width:300px;height:54px;
+    background:#f8f2e4;border:1px solid #d6c9b2;border-radius:10px;
+    box-shadow:0 4px 10px rgba(61,49,27,.12);
+  }
+  .link:nth-child(1){top:4px}
+  .link:nth-child(2){top:70px}
+  .link:nth-child(3){top:136px}
+  .ico{
+    position:absolute;left:12px;top:10px;width:34px;height:34px;border:1px solid #cdbfa5;border-radius:8px;
+    background:rgba(255,252,245,.72);display:grid;place-items:center;
+    box-shadow:1px 2px 0 rgba(120,100,70,.08);
+  }
+  .ico svg{width:23px;height:23px;display:block}
+  .title{position:absolute;left:56px;top:11px;font-size:14.5px;line-height:1;letter-spacing:.01em;color:#2b2a25}
+  .sub{position:absolute;left:56px;top:33px;font-family:"Cascadia Mono","Consolas",monospace;font-size:7.5px;letter-spacing:.09em;color:#8b816d}
+  .arrow{position:absolute;right:15px;top:16px;font-family:"Segoe UI",sans-serif;font-size:15px;color:#c85533;opacity:.8}
+  .dot{position:absolute;right:15px;bottom:12px;width:4px;height:4px;border-radius:50%;background:#d9cbb2}
+</style>
+</head>
+<body>
+  <div class="link">
+    <div class="ico">
+      <svg viewBox="0 0 24 24"><g fill="none" stroke="#4b463a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6.6 9.2 5.7 5.4l3.7 1.8"/>
+        <path d="M17.4 9.2l.9-3.8-3.7 1.8"/>
+        <path d="M5.9 10.4c0-3.2 2.7-5.6 6.1-5.6s6.1 2.4 6.1 5.6c0 3.7-2.7 6.2-6.1 6.2s-6.1-2.5-6.1-6.2Z"/>
+        <circle cx="9.6" cy="10.6" r=".55" fill="#4b463a" stroke="none"/>
+        <circle cx="14.4" cy="10.6" r=".55" fill="#4b463a" stroke="none"/>
+        <path d="M11.2 12.7c.3.3.7.3 1 0"/>
+        <path d="M4.9 11.4h1.2M18 11.4h1.2"/>
+      </g></svg>
+    </div>
+    <div class="title">GitHub</div>
+    <div class="sub">@muyi0736</div>
+    <div class="arrow">↗</div>
+    <div class="dot"></div>
+  </div>
+
+  <div class="link">
+    <div class="ico">
+      <svg viewBox="0 0 24 24"><g fill="none" stroke="#b95433" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16.8 4.8a7.4 7.4 0 1 0 0 14.4 8.3 8.3 0 0 1 0-14.4Z"/>
+        <path d="M18.6 5.7v2.2M17.5 6.8h2.2"/>
+      </g></svg>
+    </div>
+    <div class="title">Windletter</div>
+    <div class="sub">Minecraft launcher</div>
+    <div class="arrow">↗</div>
+    <div class="dot"></div>
+  </div>
+
+  <div class="link">
+    <div class="ico">
+      <svg viewBox="0 0 24 24"><g fill="none" stroke="#4b6b4b" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 4.5v9"/>
+        <path d="M8.6 10.2 12 13.6l3.4-3.4"/>
+        <path d="M5 17.5h14"/>
+      </g></svg>
+    </div>
+    <div class="title">Releases</div>
+    <div class="sub">latest builds</div>
+    <div class="arrow">↗</div>
+    <div class="dot"></div>
+  </div>
+</body>
+</html>

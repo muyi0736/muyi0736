@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:transparent}
+  body{width:540px;height:220px;overflow:hidden;font-family:"Ink Free","Segoe Print","Comic Sans MS",cursive;color:#2b2a25}
+  .card{
+    position:absolute;left:10px;top:10px;width:520px;height:200px;
+    background:#f8f2e4;border:1px solid #d6c9b2;border-radius:12px;
+    box-shadow:0 7px 18px rgba(61,49,27,.14);
+    overflow:hidden;
+  }
+  .card::before{
+    content:"";position:absolute;inset:54px 0 0 0;pointer-events:none;opacity:.55;
+    background:repeating-linear-gradient(to bottom,transparent 0 26px,rgba(191,174,142,.28) 26px 27px);
+  }
+  .card::after{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.45;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='130' height='130'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='130' height='130' filter='url(%23n)' opacity='.14'/%3E%3C/svg%3E");
+    mix-blend-mode:multiply;
+  }
+  .tape{
+    position:absolute;left:38px;top:-7px;width:88px;height:21px;z-index:3;
+    background:rgba(233,211,153,.75);
+    clip-path:polygon(2% 12%,98% 0,100% 86%,0 100%);
+    box-shadow:0 1px 2px rgba(80,60,20,.10);
+    transform:rotate(-2.4deg);
+  }
+  .heading{
+    position:absolute;left:27px;top:18px;z-index:2;
+    font-size:26px;line-height:1.1;letter-spacing:.01em;color:#2b2a25;
+    text-shadow:0 1px 0 rgba(255,255,255,.6);
+  }
+  .heading .squiggle{display:block;width:176px;height:7px;margin-top:2px}
+  .copy{
+    position:absolute;left:27px;top:61px;width:318px;z-index:2;
+    font-family:"Ink Free","Segoe Print","Comic Sans MS",cursive;
+    font-size:12.6px;line-height:1.55;color:#514b3c;letter-spacing:.005em;
+  }
+  .copy b{font-weight:400;color:#2b2a25}
+  .copy .cn{font-family:"SimSun","Songti SC",serif;font-size:12px;letter-spacing:.04em;color:#4f4939}
+  .foot{
+    position:absolute;left:27px;bottom:11px;z-index:2;
+    font-family:"Cascadia Mono","Consolas",monospace;font-size:7px;
+    letter-spacing:.14em;color:#988d77;text-transform:uppercase;
+  }
+  .sticker{
+    position:absolute;right:-3px;bottom:-8px;height:170px;z-index:4;
+    filter:drop-shadow(0 8px 6px rgba(66,52,26,.16));
+  }
+  .star{
+    position:absolute;right:196px;top:23px;z-index:2;color:#c85533;font-size:15px;opacity:.75;
+    transform:rotate(8deg);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="tape"></div>
+  <div class="star">✦</div>
+  <div class="heading">A little about me
+    <svg class="squiggle" viewBox="0 0 176 7"><path d="M2 4c22-3 39 2 60 1 20-1 38-3 56-1 18 2 35 2 56 0" fill="none" stroke="#c85533" stroke-width="1.4" stroke-linecap="round" opacity=".5"/></svg>
+  </div>
+  <div class="copy">
+    I build Minecraft launchers and small Windows tools.
+    Currently deep in <span class="cn">月月月</span>启动器 (Windletter) — CurseForge
+    packs, KubeJS, backups, and one more late-night
+    polish pass. Local-first, made with <span class="cn">月月</span>, under the moon.
+  </div>
+  <div class="foot">local-first · open source · est. 2026</div>
+  <img class="sticker" src="../stickers/yiyi-stars.png" alt="易易">
+</div>
+</body>
+</html>

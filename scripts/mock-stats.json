@@ -1,0 +1,11 @@
+{
+  "stars": 128,
+  "followers": 12,
+  "repos": 8,
+  "languages": [
+    { "name": "C#", "pct": 46 },
+    { "name": "TypeScript", "pct": 24 },
+    { "name": "JavaScript", "pct": 18 },
+    { "name": "Other", "pct": 12 }
+  ]
+}

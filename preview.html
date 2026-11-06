@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preview · Muyi · GitHub profile</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:#fff;color:#1f2328;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
+    font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  }
+  a{color:#0969da;text-decoration:none}
+  a:hover{text-decoration:underline}
+  .topbar{
+    height:62px;background:#24292f;color:#f0f3f6;
+    display:flex;align-items:center;gap:18px;padding:0 28px;
+  }
+  .mark{
+    width:30px;height:30px;border-radius:50%;background:#f6f8fa;
+    display:grid;place-items:center;flex:0 0 auto;
+  }
+  .mark svg{width:21px;height:21px;display:block}
+  .logo{font-weight:600;font-size:17px;letter-spacing:.2px;color:#fff}
+  .nav-links{display:flex;gap:18px;font-size:14px;color:#c9d1d9;margin-left:6px}
+  .search{
+    width:290px;height:30px;border:1px solid #57606a;border-radius:6px;
+    background:#32383f;color:#8b949e;display:flex;align-items:center;padding:0 10px;
+    font-size:12px;margin-left:8px;
+  }
+  .preview-chip{
+    margin-left:auto;font-family:"Cascadia Mono",Consolas,monospace;font-size:9px;
+    letter-spacing:.16em;color:#f3e6c8;border:1px solid #57606a;padding:4px 8px;border-radius:4px;
+    background:#32383f;
+  }
+  .profile{
+    display:grid;grid-template-columns:296px minmax(0,1fr);gap:40px;
+    max-width:1360px;margin:32px auto 26px;padding:0 32px;align-items:start;
+  }
+  .sidebar{min-width:0}
+  .avatar{
+    width:222px;height:222px;border-radius:50%;border:1px solid #d0d7de;
+    object-fit:cover;display:block;background:#f7f1e3;
+  }
+  .name{font-size:24px;font-weight:600;margin:16px 0 0;line-height:1.25}
+  .handle{font-size:20px;font-weight:300;color:#57606a;margin:0 0 14px;line-height:1.3}
+  .bio{margin:0 0 14px;font-size:15px;color:#1f2328}
+  .follow{
+    width:100%;height:32px;border:1px solid #d0d7de;border-radius:6px;background:#f6f8fa;
+    color:#24292f;font-size:13px;font-weight:600;cursor:pointer;
+  }
+  .meta{display:flex;flex-direction:column;gap:7px;margin-top:16px;font-size:14px;color:#57606a}
+  .meta span{display:flex;align-items:center;gap:7px}
+  .meta svg{width:15px;height:15px;flex:0 0 auto;opacity:.75}
+  .side-rule{border-top:1px solid #d8dee4;margin:18px 0 14px}
+  .side-label{font-size:13px;font-weight:600;color:#24292f;margin-bottom:6px}
+  .side-note{font-size:12px;color:#57606a;line-height:1.55}
+  .main{min-width:0;border-left:1px solid #d8dee4;padding-left:38px;padding-bottom:20px}
+  .readme{max-width:880px}
+  .readme img{max-width:100%;height:auto;border:0}
+  .readme p{margin:0}
+  .readme .banner{text-align:center;margin:4px 0 18px}
+  .readme .link-stack{line-height:1.5}
+  .readme .snapshot{text-align:center;margin-top:18px}
+  .readme .foot{text-align:center;margin-top:12px}
+  .readme .foot sub{font-size:11px;color:#57606a}
+  .preview-note{
+    max-width:1360px;margin:0 auto 40px;padding:0 32px 0 406px;
+    font-size:11px;color:#8b949e;line-height:1.6;
+  }
+  .preview-note b{font-weight:600;color:#6e7781}
+  @media (max-width:1100px){
+    .profile{grid-template-columns:1fr;gap:24px}
+    .main{border-left:0;padding-left:0}
+    .preview-note{padding-left:32px}
+    .avatar{width:160px;height:160px}
+    .search,.nav-links{display:none}
+  }
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <span class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><g fill="none" stroke="#24292f" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6.6 9.2 5.7 5.4l3.7 1.8"/>
+        <path d="M17.4 9.2l.9-3.8-3.7 1.8"/>
+        <path d="M5.9 10.4c0-3.2 2.7-5.6 6.1-5.6s6.1 2.4 6.1 5.6c0 3.7-2.7 6.2-6.1 6.2s-6.1-2.5-6.1-6.2Z"/>
+        <circle cx="9.6" cy="10.6" r=".55" fill="#24292f" stroke="none"/>
+        <circle cx="14.4" cy="10.6" r=".55" fill="#24292f" stroke="none"/>
+        <path d="M11.2 12.7c.3.3.7.3 1 0"/>
+      </g></svg>
+    </span>
+    <span class="logo">GitHub</span>
+    <nav class="nav-links"><span>Product</span><span>Solutions</span><span>Open Source</span><span>Pricing</span></nav>
+    <span class="search">Type / to search</span>
+    <span class="preview-chip">LOCAL PREVIEW</span>
+  </header>
+
+  <div class="profile">
+    <aside class="sidebar">
+      <img class="avatar" src="assets/avatar-preview.png" alt="Muyi avatar preview">
+      <h1 class="name">Muyi</h1>
+      <div class="handle">muyi0736</div>
+      <p class="bio">Minecraft launchers, small Windows tools, and one more late-night polish pass.</p>
+      <button class="follow" type="button">Follow</button>
+      <div class="meta">
+        <span>
+          <svg viewBox="0 0 16 16"><path fill="currentColor" d="M2 5.5a3.5 3.5 0 1 1 7 0c0 1.4-.8 2.5-2 3.1l.6 2.4-.7 3.5-1.5-1.6-1.5 1.6-.7-3.5.6-2.4c-1.2-.6-2-1.7-2-3.1Zm1.5 0c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2Z"/></svg>
+          <span><b>12</b> followers · <b>2</b> following</span>
+        </span>
+        <span>
+          <svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 1.5c-2.8 0-5 2.1-5 4.8 0 3.6 5 8.2 5 8.2s5-4.6 5-8.2c0-2.7-2.2-4.8-5-4.8Zm0 2a2.8 2.8 0 1 1 0 5.6 2.8 2.8 0 0 1 0-5.6Z"/></svg>
+          <span>China</span>
+        </span>
+        <span>
+          <svg viewBox="0 0 16 16"><path fill="currentColor" d="M7.8 1.2a1 1 0 0 1 .4 0l6 2.2a.8.8 0 0 1 0 1.5l-6 2.2a1 1 0 0 1-.4 0l-6-2.2a.8.8 0 0 1 0-1.5l6-2.2Zm-4.6 5 4.8 1.8 4.8-1.8 1 .4v3.6c0 1.7-2.6 3-5.8 3s-5.8-1.3-5.8-3V6.6l1-.4Z"/></svg>
+          <span><a href="https://github.com/muyi0736">github.com/muyi0736</a></span>
+        </span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="readme">
+        <p class="banner">
+          <a href="https://github.com/muyi0736">
+            <img src="assets/banner.png" width="880" alt="Muyi — Minecraft tools &amp; Windows apps, with 易易 and 月月">
+          </a>
+        </p>
+
+        <img src="assets/about.png" width="540" align="left" alt="A little about me — I build Minecraft launchers and small Windows tools">
+        <a href="https://github.com/muyi0736"><img src="assets/link-github.png" width="308" alt="GitHub — @muyi0736"></a><br>
+        <a href="https://github.com/muyi0736/windletter"><img src="assets/link-windletter.png" width="308" alt="Windletter — Minecraft launcher"></a><br>
+        <a href="https://github.com/muyi0736/windletter/releases"><img src="assets/link-releases.png" width="308" alt="Releases — latest builds"></a>
+
+        <br clear="all">
+
+        <p class="snapshot">
+          <img src="preview/snapshot-sample.svg" width="880" alt="GitHub snapshot — sample data">
+        </p>
+
+        <p class="foot">
+          <sub><a href="https://github.com/muyi0736">GitHub</a> · <a href="https://github.com/muyi0736/windletter">Windletter</a> · <a href="https://github.com/muyi0736/windletter/releases">Releases</a> · 易易 &amp; 月月, under the moon</sub>
+        </p>
+      </div>
+    </main>
+  </div>
+
+  <p class="preview-note"><b>Local preview.</b> The sidebar is a mock and its numbers, like the snapshot above, are illustrative; after you push this to <code>muyi0736/muyi0736</code>, the GitHub Action fills the snapshot with live stars, followers, repos and language bytes.</p>
+</body>
+</html>

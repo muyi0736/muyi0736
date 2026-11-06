@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:transparent}
+  body{width:880px;height:260px;overflow:hidden}
+  .banner{
+    position:relative;width:880px;height:260px;overflow:hidden;
+    border:1px solid #d9cdb6;border-radius:14px;
+    background:linear-gradient(165deg,#eef4e9 0%,#f8f2e3 52%,#f1e8d3 100%);
+    font-family:"Ink Free","Segoe Print","Comic Sans MS",cursive;
+    color:#2b2a25;
+  }
+  .banner::after{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.15'/%3E%3C/svg%3E");
+    mix-blend-mode:multiply;border-radius:14px;
+  }
+  .sky{position:absolute;inset:0;width:880px;height:260px}
+  .copy{position:absolute;left:44px;top:30px;z-index:3;width:470px}
+  .handle{font-family:"Cascadia Mono","Consolas",monospace;font-size:10.5px;letter-spacing:.14em;color:#7c7564;margin-bottom:2px}
+  .name{font-size:56px;line-height:1;letter-spacing:.01em;color:#2a2924;font-weight:700;text-shadow:0 1px 0 rgba(255,255,255,.7)}
+  .name .dot{color:#c85533}
+  .tagline{font-size:19px;line-height:1.35;color:#4f5849;margin-top:6px;position:relative;display:inline-block}
+  .tagline svg{position:absolute;left:0;bottom:-8px;width:330px;height:9px;overflow:visible}
+  .sub{margin-top:18px;font-family:"Cascadia Mono","Consolas",monospace;font-size:8.5px;letter-spacing:.18em;color:#8b816d;text-transform:uppercase}
+  .sub .cn{font-family:"SimSun","Songti SC",serif;font-size:11px;letter-spacing:.16em;color:#6f6858}
+  .tech{position:absolute;left:44px;bottom:24px;z-index:3;display:flex;gap:8px}
+  .tile{
+    width:34px;height:34px;border:1px solid #b8a98d;border-radius:8px;
+    background:rgba(255,252,244,.72);display:grid;place-items:center;
+    font-family:"Cascadia Mono","Consolas",monospace;font-size:9.5px;font-weight:700;color:#4b463a;
+    box-shadow:1px 2px 0 rgba(120,100,70,.13);
+    transform:rotate(-1.2deg);
+  }
+  .tile:nth-child(2){transform:rotate(1deg)}
+  .tile:nth-child(3){transform:rotate(-.6deg)}
+  .tile:nth-child(4){transform:rotate(1.4deg)}
+  .tile.wide{width:46px;font-size:7.2px;letter-spacing:.02em}
+  .tile small{font-size:7px;font-weight:400;letter-spacing:0}
+  .mascot{position:absolute;right:16px;bottom:2px;height:218px;z-index:4;filter:drop-shadow(0 10px 7px rgba(66,54,30,.18))}
+  .moonline{position:absolute;left:312px;bottom:14px;z-index:2;font-family:"Cascadia Mono",monospace;font-size:7.5px;letter-spacing:.22em;color:#7d7767;transform:rotate(-1.5deg)}
+</style>
+</head>
+<body>
+<div class="banner">
+  <svg class="sky" viewBox="0 0 880 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="hillA" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#c2d8b2"/><stop offset="1" stop-color="#a9c69a"/>
+      </linearGradient>
+      <linearGradient id="hillB" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#a5c294"/><stop offset="1" stop-color="#86a878"/>
+      </linearGradient>
+      <mask id="moonMask">
+        <rect width="880" height="260" fill="white"/>
+        <circle cx="588" cy="46" r="27" fill="black"/>
+      </mask>
+      <filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
+    </defs>
+    <circle cx="604" cy="56" r="38" fill="#f2d58b" opacity=".35" filter="url(#soft)"/>
+    <circle cx="604" cy="56" r="31" fill="#f3d891" mask="url(#moonMask)"/>
+    <g stroke="#d8bf77" stroke-width="1.2" stroke-linecap="round" opacity=".85">
+      <path d="M550 24v9M545.5 28.5h9"/>
+      <path d="M652 24v7M648.5 27.5h7"/>
+      <path d="M545 96v7M541.5 99.5h7"/>
+      <path d="M566 128v5M563.5 130.5h5"/>
+    </g>
+    <g fill="#fff8e6">
+      <circle cx="530" cy="56" r="1.4"/><circle cx="574" cy="24" r="1.2"/>
+      <circle cx="646" cy="82" r="1.3"/><circle cx="622" cy="112" r="1.1"/>
+      <circle cx="530" cy="128" r="1.1"/><circle cx="660" cy="48" r="1.2"/>
+    </g>
+    <path d="M0 214C84 201 156 200 238 214C330 230 404 204 486 208C572 212 646 226 722 216C786 208 836 202 880 207V260H0Z" fill="url(#hillA)"/>
+    <path d="M0 234C96 220 172 230 262 236C360 243 442 224 536 226C638 228 724 244 800 236C836 232 862 230 880 227V260H0Z" fill="url(#hillB)"/>
+    <g stroke="#7f9f70" stroke-width="1" stroke-linecap="round" opacity=".8">
+      <path d="M60 228c2-6 4-8 6-10M64 228c0-5 1-8 2-11M68 228c2-5 4-7 7-8"/>
+      <path d="M160 236c2-5 4-7 6-9M164 236c0-4 1-7 2-9"/>
+      <path d="M300 240c2-5 4-7 6-9M304 240c0-4 1-7 2-9"/>
+      <path d="M520 232c2-5 4-7 6-9M524 232c0-4 1-7 2-9"/>
+    </g>
+    <g fill="#f6e3bd" opacity=".95">
+      <circle cx="98" cy="228" r="2"/><circle cx="206" cy="242" r="1.6"/>
+      <circle cx="354" cy="244" r="1.7"/><circle cx="472" cy="240" r="1.5"/>
+    </g>
+    <g stroke="#c9a45e" stroke-width="1" opacity=".45" stroke-dasharray="2 5">
+      <path d="M20 248H240" />
+    </g>
+  </svg>
+
+  <div class="copy">
+    <div class="handle">@muyi0736 · 易易</div>
+    <div class="name">Muyi<span class="dot">.</span></div>
+    <div class="tagline">
+      Minecraft tools &amp; Windows apps
+      <svg viewBox="0 0 330 9"><path d="M2 5c46-3 82 2 124 1 40-1 82-4 122-2 26 1 52 3 78 1" stroke="#c85533" stroke-width="1.5" fill="none" stroke-linecap="round" opacity=".55"/></svg>
+    </div>
+    <div class="sub"><span class="cn">月月月</span> / WINDLETTER · 易易 &amp; 月月 · OPEN SOURCE UNDER THE MOON</div>
+  </div>
+
+  <div class="tech">
+    <div class="tile">C#</div>
+    <div class="tile">.NET</div>
+    <div class="tile wide">ELECTRON</div>
+    <div class="tile">Vue</div>
+  </div>
+
+  <img class="mascot" src="../stickers/couple-stars.png" alt="易易">
+  <div class="moonline">STAY A WHILE · LOOK AT THE STARS</div>
+</div>
+</body>
+</html>
