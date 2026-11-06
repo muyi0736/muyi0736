@@ -7,7 +7,7 @@
 
   <text x="4" y="23" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="19" fill="#2b2a25">GitHub snapshot</text>
   <path d="M4 30C58 28 118 31 176 29" fill="none" stroke="#c85533" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
-  <text x="876" y="21" text-anchor="end" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.4" fill="#9a907b">WAITING FOR FIRST UPDATE</text>
+  <text x="876" y="21" text-anchor="end" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.4" fill="#9a907b">UPDATED 2026.11.06</text>
 
   <g filter="url(#cardShadow)">
     <rect x="0.5" y="38.5" width="395" height="195" rx="12" fill="#f8f2e4" stroke="#d6c9b2"/>
@@ -25,23 +25,49 @@
   <text x="24" y="74" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="17" fill="#2b2a25">Open source</text>
   <text x="24" y="92" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.4" fill="#9a907b">PUBLIC REPOSITORIES</text>
 
-  <text x="24" y="136" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="bold" fill="#2b2a25">—</text>
+  <text x="24" y="136" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="bold" fill="#2b2a25">3</text>
   <text x="24" y="152" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.6" fill="#9a907b">STARS</text>
 
-  <text x="145" y="136" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="bold" fill="#2b2a25">—</text>
+  <text x="145" y="136" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="bold" fill="#2b2a25">0</text>
   <text x="145" y="152" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.6" fill="#9a907b">FOLLOWERS</text>
 
-  <text x="258" y="136" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="bold" fill="#2b2a25">—</text>
+  <text x="258" y="136" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="bold" fill="#2b2a25">2</text>
   <text x="258" y="152" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.6" fill="#9a907b">PUBLIC REPOS</text>
 
-  <text x="24" y="214" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.2" fill="#a49a86">STATS FILL IN AFTER FIRST PUSH</text>
+  <text x="24" y="214" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.2" fill="#a49a86">PUBLIC REPOS ONLY · UPDATED DAILY</text>
 
   <!-- right card -->
   <text x="440" y="74" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="17" fill="#2b2a25">Primary languages</text>
   <text x="440" y="92" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.4" fill="#9a907b">SHARE OF PUBLIC REPO BYTES</text>
 
-  <text x="440" y="146" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="13" fill="#8b816d">Waiting for the first update…</text>
-  <text x="440" y="166" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.1" fill="#a49a86">THE WORKFLOW FILLS THIS IN AFTER THE FIRST PUSH</text>
+  <g>
+    <circle cx="440" cy="113" r="2.6" fill="#7fa9d8"/>
+    <text x="450" y="116" font-family="'Courier New', monospace" font-size="9.5" fill="#4f4a3f">TypeScript</text>
+    <rect x="532" y="109" width="280" height="8" rx="4" fill="#e9dfcc"/>
+    <rect x="532" y="109" width="227" height="8" rx="4" fill="#7fa9d8"/>
+    <text x="862" y="116" text-anchor="end" font-family="'Courier New', monospace" font-size="9.5" fill="#6f6858">81%</text>
+  </g>
+  <g>
+    <circle cx="440" cy="139" r="2.6" fill="#9bb6d0"/>
+    <text x="450" y="142" font-family="'Courier New', monospace" font-size="9.5" fill="#4f4a3f">CSS</text>
+    <rect x="532" y="135" width="280" height="8" rx="4" fill="#e9dfcc"/>
+    <rect x="532" y="135" width="48" height="8" rx="4" fill="#9bb6d0"/>
+    <text x="862" y="142" text-anchor="end" font-family="'Courier New', monospace" font-size="9.5" fill="#6f6858">17%</text>
+  </g>
+  <g>
+    <circle cx="440" cy="165" r="2.6" fill="#e3c45f"/>
+    <text x="450" y="168" font-family="'Courier New', monospace" font-size="9.5" fill="#4f4a3f">JavaScript</text>
+    <rect x="532" y="161" width="280" height="8" rx="4" fill="#e9dfcc"/>
+    <rect x="532" y="161" width="6" height="8" rx="4" fill="#e3c45f"/>
+    <text x="862" y="168" text-anchor="end" font-family="'Courier New', monospace" font-size="9.5" fill="#6f6858">1%</text>
+  </g>
+  <g>
+    <circle cx="440" cy="191" r="2.6" fill="#c9bda6"/>
+    <text x="450" y="194" font-family="'Courier New', monospace" font-size="9.5" fill="#4f4a3f">Other</text>
+    <rect x="532" y="187" width="280" height="8" rx="4" fill="#e9dfcc"/>
+    <rect x="532" y="187" width="6" height="8" rx="4" fill="#c9bda6"/>
+    <text x="862" y="194" text-anchor="end" font-family="'Courier New', monospace" font-size="9.5" fill="#6f6858">&lt;1%</text>
+  </g>
 
   <text x="440" y="216" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.2" fill="#a49a86">TOP 4 · OTHER AGGREGATED</text>
   <path d="M852 204l2.4 4.6 4.6 2.4-4.6 2.4-2.4 4.6-2.4-4.6-4.6-2.4 4.6-2.4z" fill="#d8bf77" opacity="0.55"/>
