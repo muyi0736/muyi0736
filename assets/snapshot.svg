@@ -7,7 +7,7 @@
 
   <text x="4" y="23" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="19" fill="#2b2a25">GitHub snapshot</text>
   <path d="M4 30C58 28 118 31 176 29" fill="none" stroke="#c85533" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
-  <text x="876" y="21" text-anchor="end" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.4" fill="#9a907b">UPDATED 2026.11.07</text>
+  <text x="876" y="21" text-anchor="end" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.4" fill="#9a907b">UPDATED 2026.11.08</text>
 
   <g filter="url(#cardShadow)">
     <rect x="0.5" y="38.5" width="395" height="195" rx="12" fill="#f8f2e4" stroke="#d6c9b2"/>
