@@ -7,7 +7,7 @@
 
   <text x="4" y="23" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="19" fill="#2b2a25">GitHub snapshot</text>
   <path d="M4 30C58 28 118 31 176 29" fill="none" stroke="#c85533" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
-  <text x="876" y="21" text-anchor="end" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.4" fill="#9a907b">UPDATED 2026.11.15</text>
+  <text x="876" y="21" text-anchor="end" font-family="'Courier New', monospace" font-size="7" letter-spacing="1.4" fill="#9a907b">UPDATED 2026.11.16</text>
 
   <g filter="url(#cardShadow)">
     <rect x="0.5" y="38.5" width="395" height="195" rx="12" fill="#f8f2e4" stroke="#d6c9b2"/>
@@ -44,14 +44,14 @@
     <circle cx="440" cy="113" r="2.6" fill="#7fa9d8"/>
     <text x="450" y="116" font-family="'Courier New', monospace" font-size="9.5" fill="#4f4a3f">TypeScript</text>
     <rect x="532" y="109" width="280" height="8" rx="4" fill="#e9dfcc"/>
-    <rect x="532" y="109" width="227" height="8" rx="4" fill="#7fa9d8"/>
+    <rect x="532" y="109" width="228" height="8" rx="4" fill="#7fa9d8"/>
     <text x="862" y="116" text-anchor="end" font-family="'Courier New', monospace" font-size="9.5" fill="#6f6858">81%</text>
   </g>
   <g>
     <circle cx="440" cy="139" r="2.6" fill="#9bb6d0"/>
     <text x="450" y="142" font-family="'Courier New', monospace" font-size="9.5" fill="#4f4a3f">CSS</text>
     <rect x="532" y="135" width="280" height="8" rx="4" fill="#e9dfcc"/>
-    <rect x="532" y="135" width="48" height="8" rx="4" fill="#9bb6d0"/>
+    <rect x="532" y="135" width="47" height="8" rx="4" fill="#9bb6d0"/>
     <text x="862" y="142" text-anchor="end" font-family="'Courier New', monospace" font-size="9.5" fill="#6f6858">17%</text>
   </g>
   <g>
